@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap');
+:root {
+  --ff-roboto: 'Roboto', sans-serif;
+}
+*, *::before, *::after {box-sizing: border-box;}
+
+body { margin: 0; }
+
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 48}
+
+.relative	{position: relative}
+.absolute	{position: absolute}
+.fixed		{position: fixed}
+
+.hide		{display: none}
+
+.top-0		{top: 0rem}
+.top-16		{top: 16rem}
+.left-0		{left: 0rem}
+.left-3		{left: 16rem}
+.right-0	{right: 0rem}
+.bottom-0	{bottom: 0rem}
+.bottom-2	{bottom: 2rem}
+.bottom-3	{bottom: 8rem}
+
+.p-6		{padding: 3rem}
+.px-6		{padding-left: 3rem; padding-right: 3rem;}
+.py-6		{padding-top: 3rem; padding-bottom: 3rem;}
+
+.p-4		{padding: 2rem}
+.p-3		{padding: 1.8rem}
+.px-4		{padding-left: 2rem; padding-right: 2rem;}
+.px-8		{padding-left: 4rem; padding-right: 4rem;}
+.py-3		{padding-top: 1.5rem; padding-bottom: 1.5rem;}
+.py-4		{padding-top: 2rem; padding-bottom: 2rem;}
+.py-5		{padding-top: 2.5rem; padding-bottom: 2.5rem;}
+.py-8		{padding-top: 4rem; padding-bottom: 4rem;}
+.py-10		{padding-top: 8rem; padding-bottom: 8rem;}
+
+.p-2		{padding: 1rem}
+.p-4		{padding: 2rem}
+.pl-4		{padding-left: 2rem;}
+.px-2		{padding-left: 1rem; padding-right: 1rem;}
+.py-2		{padding-top: 1rem; padding-bottom: 1rem;}
+.pr-2		{padding-right: 1rem;}
+
+.px-3		{padding-left: 1.5rem; padding-right: 1.5rem;}
+.py-3		{padding-top: 1.5rem; padding-bottom: 1.5rem;}
+.pr-3		{padding-right: 1.5rem;}
+
+.p-1		{padding: 0.5rem}
+.pl-1		{padding-left: 0.5rem;}
+.pr-1		{padding-right: 0.5rem;}
+.pt-1		{padding-top: 0.5rem;}
+.pt-6	  {padding-top: 3rem;}
+.pt-10	  {padding-top: 5rem;}
+.pb-1		{padding-bottom: 0.5rem;}
+.pb-4		{padding-bottom: 6rem;}
+.px-1		{padding-left: 0.5rem; padding-right: 0.5rem;}
+.py-1		{padding-top: 0.5rem; padding-bottom: 0.5rem;}
+
+.p-0		{padding: 0}
+.p-0		{padding: 0}
+.pl-6	{padding-left: 3rem;}
+.pr-0		{padding-right: 0;}
+.pt-0		{padding-top: 0;}
+.pb-0		{padding-bottom: 0;}
+.px-0		{padding-left: 0; padding-right: 0;}
+.py-0		{padding-top: 0; padding-bottom: 0;}
+
+.m-0		{margin: 0}
+.m-1		{margin: 0.5rem}
+.ml-1		{margin-left: 0.5rem;}
+.mr-1		{margin-right: 0.5rem;}
+.mt-1		{margin-top: 0.5rem;}
+.mb-1		{margin-bottom: 0.5rem;}
+.mx-1		{margin-left: 0.5rem; margin-right: 0.5rem;}
+.my-1		{margin-top: 0.5rem; margin-bottom: 0.5rem;}
+
+.text-left	{text-align: left;}
+.text-center{text-align: center;}
+.text-right	{text-align: right;}
+.uppercase	{text-transform: uppercase;}
+.overflow-hidden {overflow: hidden;}
+.overflow-x-hidden {overflow-x: hidden;}
+.overflow-y-hidden {overflow-y: hidden;}
+
+.overflow-auto {overflow: auto;}
+.overflow-x-auto {overflow-x: auto;}
+.overflow-y-auto {overflow-y: auto;}
+
+.radius-0 {border-radius: 0;}
+.radius-1 {border-radius: 0.25rem;}
+.radius-2 {border-radius: 0.5rem;}
+.radius-3 {border-radius: 0.75rem;}
+.radius-4 {border-radius: 1rem;}
+
+.zindex--2	{z-index: -2}
+.zindex--1	{z-index: -1}
+.zindex-0	{z-index: 0}
+.zindex-1	{z-index: 1}
+.zindex-2	{z-index: 2}
+.zindex-3	{z-index: 3}
+.zindex-4	{z-index: 4}
+.zindex-5	{z-index: 5}
+
+.w-full {width: 100%}
+.w-1\/2 {max-width: 50%; width: 100%;}
+
+.h-full {height: 100%}
+.h-1\/2 {max-height: 50%; height: 100%;}
+
+.block		{display: block}
+.flex		{display: flex}
+
+.flex.wrap	{flex-wrap: wrap;}
+.flex.nowrap	{flex-wrap: nowrap;}
+.flex.row	{flex-direction: row;}
+.flex.col	{flex-direction: column;}
+.flex.row-i	{flex-direction: row-reverse;}
+.flex.col-i	{flex-direction: column-reverse;}
+
+.flex.center{justify-content : center; }
+.flex.right	{justify-content : flex-end; }
+.flex.left	{justify-content : flex-start; }
+.flex.fillX	{justify-content: stretch; }
+
+.flex.top	{align-items: flex-start; }
+.flex.bottom{align-items: flex-end; }
+.flex.middle{align-items: center; }
+.flex.fillY	{align-items: stretch; }
+
+.flex.gap-0	{gap: 0rem}
+.flex.gap-1	{gap: 0.5rem}
+.flex.gap-2	{gap: 1rem}
+.flex.gap-3	{gap: 1.5rem}
+.flex.gap-4	{gap: 2rem}
+.flex.gap-5	{gap: 2.5rem}
+.flex.gap-6	{gap: 3rem}
+.flex.gap-8	{gap: 4rem}
+.flex.gap-10	{gap: 5rem}
+.flex.gap-12	{gap: 10rem}
+
+
+.flex > .flex-0	{flex: 0 0 0%}
+.flex > .flex-1	{flex: 1 1 0%}
+.flex > .flex-2	{flex: 2 1 0%}
+.flex > .flex-2dot5	{flex: 2.5 1 0%}
+.flex > .flex-3	{flex: 3 1 0%}
+.flex > .flex-4	{flex: 4 1 0%}
+.flex > .flex-5	{flex: 5 1 0%}
+.flex > .flex-6	{flex: 6 1 0%}
+.flex > .flex-18	{flex: 18 1 0%}
+
+
+/** Utility **/
+html {
+  font-family: var(--ff-roboto);
+  background: var(--background2);
+  color: var(--text2);
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+.container{
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a { 
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0px;
+  border: 0px;
+  margin: 0px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: 0.02857em;
+  color: inherit;
+}
+a:hover {
+  outline: 0px;
+}
+
+button:hover {
+  outline: 0px;
+}
+::-webkit-scrollbar {
+  width: 20px;
+
+}
+::-webkit-scrollbar-track {
+  background:  #E8E8E8;
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #3A416F 0%, #141727 100%);
+  border-radius: 10px;
+}
+p::-webkit-scrollbar{
+  width: 6px;
+}
+p::-webkit-scrollbar-track {
+  background: #E8E8E833;
+
+  border-radius: 10px;
+}
+.Blend{
+    background: linear-gradient(180deg, #FFFFFF 0%, #8D9FB3 100%);
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.Blend::-webkit-scrollbar{
+  display: none;
+}
+.Blend .header{
+    width: 100%;
+    background: linear-gradient(135deg, #3A416F 0%, #141727 100%);
+}
+/* .Blend .header img{
+  width: 120px;
+  height: auto;
+} */
+.Blend .blendContainer .rightContentContainer{
+  height: 722px;
+  overflow: hidden;
+}
+.Blend .blendContainer .rightContent .blendVideo{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    border-radius: 10px;
+}
+.Blend .blendContainer .rightContent .blendVideo video{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.Blend .blendContainer .rightContent .blendVideo .videoHead{
+    position: absolute;
+    z-index: 10;
+    background: linear-gradient(135deg, rgb(58, 65, 111,0.7) 0%, rgb(20, 23, 39,0.7) 100%);
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 34px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #F02D00;
+
+}
+.Blend .blendContainer .rightContent .blendVideo .videoCover{
+    width: 100%;
+    height: 100%;
+    background: #17171714;
+    position: absolute;
+    z-index: 5;
+    border-radius: 10px;
+
+}
+.Blend .blendContainer .rightContent .blendVideo .playIcon{
+  width: 1000px;
+  height: 500px;
+  position: absolute;
+  z-index: 100;
+   
+}
+.playIcon a{
+  display: none;
+}
+.Blend .blendContainer .rightContent h1{
+      font-size: 22px;
+      font-weight: 700;
+      color: #161616;
+}
+.Blend .blendContainer .rightContent span{
+  font-size: 14px;
+  font-weight: 600;
+  color: #161616;
+}
+.Blend .blendContainer .rightContent p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #161616;
+  height: 130px;
+  width: 100%;
+  line-height: 1.5;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.Blend .blendContainer .rightContent .blendVideo .playIcon img{
+    width: 66px;
+    height: 66px;  
+}
+.blendVideo:hover .playIcon a{
+ display: block;
+}
+.Blend .blendContainer .leftContent .contentBox{
+    width: 350px;
+    height: 100%;
+    background: #EEEEEE;
+    box-shadow: 0px 4.263157844543457px 4.263157844543457px 0px #00000040;
+    border-radius: 10px;
+}
+.Blend .blendContainer .leftContent .contentBox .leftHead{
+    background: linear-gradient(135deg, #3A416F 0%, #141727 100%);
+    font-size: 34px;
+    font-weight: 700;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+.topicsContainer .topics h2{
+    color: #161616;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.topicsContainer .subTopic button{
+    color: #848484;
+    font-size: 14px;
+    font-weight: 400;
+    border: transparent;
+}
+.topicsContainer .subTopic button:hover{
+    color: #161616;
+} 
+/* .topicsContainer .subTopic button:hover .dot{
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #F02D00;
+
+} */
+.topicsContainer .subTopic button:focus{
+  color: #161616;
+}
+.topicsContainer .subTopic button:focus .dot{
+display: block;
+width: 8px;
+height: 8px;
+border-radius: 50%;
+background: #F02D00;
+}
+.dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #F02D00;
+  display: none;
+}
+/* button {
+  color: black;
+  opacity: 50%;
+  font-size: 14px;
+  font-weight: 400;
+  border: transparent;
+}
+button:hover {
+  color: #161616;
+  opacity: 100%;
+} */
+
+/* .dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background:#F02D00; 
+} */
+ .box{
+    width: 6px;
+    height: 24px;
+    background: linear-gradient(135deg, #3A416F 0%, #141727 100%);
+    border-radius: 999px;
+}
+.Blend .leftContent .contentContainer {
+
+  height: 600px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/** 2x extera large screen **/
+@media screen and (min-width: 1536px){
+  .Blend .blendContainer .rightContent p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #161616;
+    height: 130px;
+    width: 1000px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .Blend .blendContainer .leftContent .contentBox{
+    width: 400px;
+    height: 100%;
+    background: #EEEEEE;
+    box-shadow: 0px 4.263157844543457px 4.263157844543457px 0px #00000040;
+    border-radius: 10px;
+}
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./styles.css ">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Blend">
+        <div class="header flex px-4 py-1 middle center">
+            <a >
+               <img src="./Icons/Logo2.svg"  alt="Logo" />
+            </a>
+            <div class="flex-1"></div>
+             <div>
+                  <img src="./Icons/Blend.svg"     alt="Blend"  />      
+             </div>
+            <div class="flex-1"></div>
+            <a >
+               <img src="./Icons/Logo.svg" alt="Logo-2" />
+            </a>
+
+        </div>
+        <div class="blendContainer flex miidle center row gap-10 px-2 py-3">
+        
+            <div class="rightContentContainer flex col gap-4" id="content">
+            <div class="rightContent flex col gap-2" id="content1">
+                <div class="blendVideo">
+                    <video controls  autoplay loop >
+                        <source src="./Icons/WhatsApp Video 2024-02-26 at 9.40.18 PM.mp4" type="video/mp4">
+                      </video>
+                    <!-- <div class="videoCover"></div> -->
+                    <div class="videoHead flex middle center py-1">Google vs Microsoft</div>
+                    <!-- <div class="playIcon flex middle center"><a ><img src="./Icons/playIcon.svg" /></a></div> -->
+                   
+                </div>
+                <div class="flex col gap-2 py-2">
+                <h1>Google vs Microsoft</h1>
+                <span>Overview</span>
+                <div><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose</p></div>
+                </div> 
+
+            </div>
+            <div class="rightContent flex col gap-2" id="content2">
+                <div class="blendVideo" >
+                    <div><video  controls autoplay  loop>
+                        <source src="./Icons/WhatsApp Video 2024-02-26 at 9.39.59 PM.mp4"  type="video/mp4">
+                      </video></div>
+                    
+                    <!-- <div class="videoCover"></div> -->
+                    <div class="videoHead flex middle center py-1">Google vs Microsoft</div>
+                    <!-- <div class="playIcon flex middle center"><a ><img src="./Icons/playIcon.svg" /></a></div> -->
+                   
+                </div>
+                <div class="flex col gap-2 py-2">
+                    <h1>Whatsapp</h1>
+                    <span>Overview</span>
+                    <div><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose</p></div>
+                    </div>
+
+            </div>
+           </div>
+            <div class="leftContent">
+                <div class="contentBox flex col gap-2 px-4 py-2">
+                    <div class="leftHead flex middle center py-1"><h2>Course content</h2></div>
+                    <div class="contentContainer col row gap-1" id="menu">
+                     <div class="topicsContainer">
+                        <div class="topics flex row gap-1 middle ">
+                            <div class="box"></div>
+                            <h2> Google vs Microsoft</h2>
+                        </div>
+                        <div class="subTopic flex col gap-1 py-2">
+                            <button class="flex  row  gap-1 middle"  onclick="changeContent('content1')">Lorem ipsum <div class="dot"></div> </button>
+                            <button class="flex row  gap-1 middle"   onclick="changeContent('content2')">Lorem ipsum <div class="dot"></div></button>
+                        </div>
+                    </div>
+                    <div class="topicsContainer">
+                        <div class="topics flex row gap-1 middle ">
+                            <div class="box"></div>
+                            <h2> Google vs Microsoft</h2>
+                        </div>
+                        <div class="subTopic flex col gap-1 py-2">
+                            <button class="flex row  gap-1 middle" onclick="changeContent('content1')">Lorem ipsum <div class="dot "></div></button>
+                            <button class="flex row  gap-1 middle" onclick="changeContent('content2')">Lorem ipsum <div class="dot "></div></button>
+                        </div>
+                    </div>
+                    <div class="topicsContainer">
+                        <div class="topics flex row gap-1 middle ">
+                            <div class="box"></div>
+                            <h2> Google vs Microsoft</h2>
+                        </div>
+                        <div class="subTopic flex col gap-1 py-2">
+                            <button class="flex row  gap-1 middle" onclick="changeContent('content1')">Lorem ipsum <div class="dot "></div></button>
+                            <button class="flex row  gap-1 middle" onclick="changeContent('content2')">Lorem ipsum <div class="dot "></div></button>
+                        </div>
+                    </div>
+                    <div class="topicsContainer">
+                        <div class="topics flex row gap-1 middle ">
+                            <div class="box"></div>
+                            <h2> Google vs Microsoft</h2>
+                        </div>
+                        <div class="subTopic flex col gap-1 py-2">
+                            <button class="flex row  gap-1 middle" onclick="changeContent('content1')">Lorem ipsum <div class="dot "></div></button>
+                            <button class="flex row  gap-1 middle" onclick="changeContent('content2')">Lorem ipsum <div class="dot "></div></button>
+                        </div>
+                    </div>
+                    <div class="topicsContainer">
+                        <div class="topics flex row gap-1 middle ">
+                            <div class="box"></div>
+                            <h2> Google vs Microsoft</h2>
+                        </div>
+                        <div class="subTopic flex col gap-1 py-2">
+                            <button class="flex row  gap-1 middle" onclick="changeContent('content1')">Lorem ipsum <div class="dot "></div></button>
+                            <button class="flex row  gap-1 middle" onclick="changeContent('content2')">Lorem ipsum <div class="dot "></div></button>
+                        </div>
+                    </div>
+                    <div class="topicsContainer">
+                        <div class="topics flex row gap-1 middle ">
+                            <div class="box"></div>
+                            <h2> Google vs Microsoft</h2>
+                        </div>
+                        <div class="subTopic flex col gap-1 py-2">
+                            <button class="flex row  gap-1 middle" onclick="changeContent('content1')">Lorem ipsum <div class="dot "></div></button>
+                            <button class="flex row  gap-1 middle" onclick="changeContent('content2')">Lorem ipsum <div class="dot "></div></button>
+                        </div>
+                    </div>
+                    <div class="topicsContainer">
+                        <div class="topics flex row gap-1 middle ">
+                            <div class="box"></div>
+                            <h2> Google vs Microsoft</h2>
+                        </div>
+                        <div class="subTopic flex col gap-1 py-2">
+                            <button class="flex row  gap-1 middle" onclick="changeContent('content1')">Lorem ipsum <div class="dot "></div></button>
+                            <button class="flex row  gap-1 middle" onclick="changeContent('content2')">Lorem ipsum <div class="dot "></div></button>
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <script>
+             function changeContent(contentId) {
+                
+                    var contentElements = document.querySelectorAll('#content > div video ');
+                    contentElements.forEach(function (element) {
+                        // element.style.display = 'none';  
+                        element.pause(); 
+                        
+                    });
+                    var contentElements = document.querySelectorAll('#content > div  ');
+                    contentElements.forEach(function (element) {
+                        element.style.display = 'none';  
+                        // element.pause(); 
+                        
+                    });
+                    var selectedContent = document.getElementById(contentId);
+                    if (selectedContent) {
+                        selectedContent.style.display = 'block';
+                        // element.play();
+                       
+                    }
+                }  
+               
+               
+
+                $('.topicsContainer .subTopic button').on('click', function () {
+                    $('.topicsContainer .subTopic button').css('color', '');
+                    $(this).css('color', '#F02D00')     
+                })
+
+                $('.dot').on('click',function () {
+                    $('.dot ').css('display', "");
+                    $(this).css('display','block')
+                })
+           
+            
+        </script>
+
+    </div>
+    
+</body>
+</html>

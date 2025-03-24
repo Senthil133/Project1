@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>tepros.in</title>
+    <link rel="icon" type="image/x-icon" href="./Assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Selection</title>
+    <style>
+        /* Add your styling here */
+        #menu {
+            float: left;
+            width: 20%;
+        }
+
+        #content {
+            float: left;
+            width: 80%;
+        }
+
+        /* .side-subject {
+            cursor: pointer;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div class='App h-100'>
+        <div class='Header '>
+            <div class='bg_blue'>
+                <div class='subject_component'>
+                    <div>
+                        <a style="width:150px;height:200px" class='cursur_poiter' href="./Science.html">
+                            <img src="./Assets//Tepros.png" alt='Tepose' style="width:23%">
+                        </a>
+                    </div>
+                    <div>
+                        <img src="./Assets/pcmc logo.png" alt="pcmc" style="width: 36%;" />
+                    </div>
+                    <div class="icon-align">
+                        <a href="Subject.html"><img src="./Assets/Home.png" alt="" style="width:28px;height:28px;"
+                                class="opasity"></a>
+                        <a href="Home.html"><img src="./Assets/Loglot.png" alt="" style="width:28px;height:28px;"
+                                class="opasity"></a>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class=" new-backgroundimg w-100 d-flex flec-column align-items-center justify-content-center">
+                <div class="mat-total-align">
+                    <div class="inside-math-subjects">
+                        <div class="math-subjects" id="menu">
+                            <div class="yellow-back">
+                                <div class="font-size font-familys"> Standard-9</div>
+                                <div class="lines"></div>
+                                <div class="font-size font-familys">Subject - Science</div>
+                            </div>
+                            <!-- Menu items -->
+                            <div class="inside-gap">
+                                <div class="menu-item font-size font-familys" onclick="changeContent('content1')">
+                                    1.Measurement</div>
+                                <div class="menu-item font-size font-familys" onclick="changeContent('content2')">
+                                    2.Motion</div>
+                                <div class="menu-item font-size font-familys" onclick="changeContent('content3')">
+                                    3.Fluids</div>
+                                <div class="menu-item font-size font-familys" onclick="changeContent('content4')">4.Heat
+                                </div>
+                                <div class="menu-item font-size font-familys" onclick="changeContent('content5')">
+                                    5.Light</div>
+                                <div class="menu-item font-size font-familys" onclick="changeContent('content6')">
+                                    6.Geometry</div>
+                                    <div class="menu-item font-size font-familys" onclick="changeContent('content6')">
+                                        6.Geometry</div>
+                                        <div class="menu-item font-size font-familys" onclick="changeContent('content6')">
+                                            6.Geometry</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-content" id="content">
+                        <!-- Content area -->
+                        <div id="content1">
+                            <div>
+                                <a href="https://www.youtube-nocookie.com/embed/ZitJW0zZSog?rel=0"><img
+                                        src="./Assets/Measurement nook1.png" alt="" class="video-contentsize"></a>
+                            </div>
+                        </div>
+                        <div id="content2" style="display:none;">
+                            <div>
+                                <a href="https://www.youtube-nocookie.com/embed/ZitJW0zZSog?rel=0"><img
+                                        src="./Assets/Motion.png" alt="" class="video-contentsize"></a>
+                            </div>
+
+
+                            <!-- <iframe src="https://drive.google.com/file/d/1WMNdseORsRWQ2OC3j8nAwKIknrOutGkz/preview" -->
+                            <!-- scrolling="No" width="640" height="480" allow="autoplay"></iframe> -->
+
+                            <!-- <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/ZitJW0zZSog?rel=0" name="Video" scrolling="No" height="500px" width="100%" style="border: none;"></iframe> -->
+
+                        </div>
+                        <div id="content3" style="display:none;">
+                            <div>
+                                <a href="https://www.youtube-nocookie.com/embed/ZitJW0zZSog?rel=0"><img
+                                        src="./Assets/Motion.png" alt="" class="video-contentsize"></a>
+                            </div>
+                        </div>
+                        <div id="content4" style="display:none;">
+                            <div>
+                                <a href="https://www.youtube-nocookie.com/embed/ZitJW0zZSog?rel=0"><img
+                                        src="./Assets/Motion.png" alt="" class="video-contentsize"></a>
+                            </div>
+                        </div>
+                        <div id="content5" style="display: none;">
+                            <div>
+                                <a href="https://www.youtube-nocookie.com/embed/ZitJW0zZSog?rel=0"><img
+                                        src="./Assets/Motion.png" alt="" class="video-contentsize"></a>
+                            </div>
+                        </div>
+                        <!-- <div id="content6" style="display: none;">Content for Menu 6</div> -->
+                    </div>
+                </div>
+                <div class="position-relativenew">
+                    <img src="Assets/powered by.png" style="width: 200px; " class="powered-by">
+                </div>
+            </div>
+
+            <script>
+                function changeContent(contentId) {
+                    // Hide all content elements
+                    var contentElements = document.querySelectorAll('#content > div');
+                    contentElements.forEach(function (element) {
+                        element.style.display = 'none';
+                    });
+
+                    // Show the selected content element
+                    var selectedContent = document.getElementById(contentId);
+                    if (selectedContent) {
+                        selectedContent.style.display = 'block';
+                    }
+                }
+
+                $('.menu-item').on('click', function () {
+                    $('.menu-item').css('background', '');
+                    $(this).css('background', '#FCBF49')
+                })
+            </script>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
